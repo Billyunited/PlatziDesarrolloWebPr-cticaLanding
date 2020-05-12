@@ -1,0 +1,272 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+* {
+   /* box-sizing: border-box; */
+
+
+}
+
+/* selector de etiqueta, header, section, article, nav */
+/* header{
+    background: pink;
+} */
+
+/* Selector descendente */
+
+/* body nav li a{
+    background: rgb(114, 149, 255);
+} */
+
+/* Selector de clase, las clases se colocan a las etiquetas en las que queremos se apliquen estilos */
+
+/* .link{
+    color: black;
+} */
+
+/* Selector de id, es casi lo mismo que el selector de clase, pero no puedes repetirlo y antepones un # 
+ejemplo: #portafolio
+*/
+
+/* Las declaraciones es todo el conjunto los elementos: selector, propiedad y valor ejemplo:
+
+header{
+    background: pink;
+}
+
+*/
+/* Colores
+Gris oscuro = #1d252c
+Gris claro = #fafafa
+Background Gris = #1b2127
+celeste = #026fff
+*/
+
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   margin: 0;
+   background-color: #ECECEC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Fjalla One', sans-serif;
+   margin: 0;
+}
+
+/* h2,h3,h4,h5,h6 {
+    padding-bottom: 10px;
+} */
+a,
+.footer a {
+   color: #87CC00;
+   text-decoration: none;
+}
+
+h1 {}
+
+h1 {
+   font-size: 40px;
+   line-height: 1.5em;
+   font-weight: normal;
+   letter-spacing: -.2px;
+   color: white;
+   margin-left: 40px;
+}
+
+h1 strong {
+   color: rgb(47, 137, 255);
+}
+
+ol,
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+figure {
+   margin: 0;
+}
+
+.header {
+   background-color: #1c242b;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   height: 70px;
+
+
+}
+
+.header ul {
+   display: flex;
+}
+
+.header li {
+   list-style: none;
+}
+
+.header a {
+   color: #fff;
+   text-decoration: none;
+
+
+}
+
+.menu {
+   height: inherit;
+}
+
+.header ul {
+   height: inherit;
+}
+
+.header ul li {
+   height: inherit;
+}
+
+.header a {
+   height: inherit;
+   color: white;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   padding: 0 10px;
+
+}
+
+.hero {
+   height: 300px;
+   background-image: url('../images/hero.jpg');
+   background-size: 500px;
+   background-repeat: no-repeat;
+   background-position-x: right;
+   background-color: #1c242b;
+   display: flex;
+   align-items: center;
+
+
+}
+
+.portfolio {
+   background-color: #eeeeee;
+   padding: 0 20px 20px 20px;
+}
+
+h2 {
+   text-transform: uppercase;
+   color: rgb(47, 137, 255);
+   font-family: "Source Sans Pro";
+   font-weight: bold;
+   font-size: 24px;
+   margin: 25px 0px;
+}
+
+.project {
+   background-color: white;
+   /*  border-top: 5px solid green;
+    border-right: 5px solid yellowgreen;
+    border-bottom: 5px solid pink;
+    border-left: 5px solid red; */
+   border: 1px solid grey;
+   /* margin: 10px; */
+   box-shadow: 0px 4px 12px 0px #00000021;
+   margin-bottom: 15px;
+   border-radius: 10px;
+   padding: 30px 40px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.project strong {
+   font-family: 'Fjalla One', sans-serif;
+}
+
+.project-date,
+.project-url,
+.project-description {
+   margin: 10px 0;
+}
+
+.project-course {
+   margin: 10px 0;
+}
+
+
+.project-title {
+   font-size: 30px;
+   margin-top: 0;
+   margin: 10px 0;
+
+}
+
+.project-description {
+   font-size: 22px;
+}
+
+.project-details {}
+
+.trabajemos {
+   margin: 25px 0;
+}
+
+/* Eventos */
+
+.event-list {
+   display: flex;
+   justify-content: center;
+   /* flex-wrap: wrap; */
+}
+
+.event {
+   margin: 1rem 1rem;
+   width: 480px;
+   height: 300;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0px 4px 12px 0px #00000021;
+   flex-shrink: 0;
+}
+
+.event-imageContainer {
+   height: 300px;
+}
+
+.event img {
+   width: 480px;
+   height: inherit;
+   object-fit: cover;
+}
+
+.event-detail {
+
+   padding: 1rem 1.5rem;
+   background: white;
+}
+
+.footer {
+   font-size: 22px;
+   height: 120px;
+   background-color: #1c242b;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer img {
+   vertical-align: middle;
+}
+
+.footer div {
+   margin: 0 30px;
+}
